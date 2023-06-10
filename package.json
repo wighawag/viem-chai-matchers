@@ -1,6 +1,6 @@
 {
 	"name": "viem-chai-matchers",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "chai matchers for viem",
 	"publishConfig": {
 		"access": "public"
