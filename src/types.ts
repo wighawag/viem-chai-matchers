@@ -1,5 +1,6 @@
 declare module Chai {
 	export interface Assertion {
-		revertedWith(error: string): void;
+		revertedWith(error: string): PromisedAssertion;
+		reverted(): PromisedAssertion;
 	}
 }

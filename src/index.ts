@@ -12,4 +12,7 @@ export function viemChaiMatchers(chai: Chai.ChaiStatic, utils: Chai.ChaiUtils) {
 				`VM Exception while processing transaction: reverted with reason string '${input}'`
 			);
 	});
+	Assertion.addMethod('reverted', function () {
+		new Assertion(this._obj).to.eventually.be.rejected.and.be.an.instanceOf(TransactionExecutionError);
+	});
 }
